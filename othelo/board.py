@@ -1,5 +1,7 @@
 import pygame
 from .constants import GREEN, ROWS, SQUARE_SIZE, COLS, PADDING, BLACK
+
+
 class Board:
     def __init__(self):
         self.board = []
@@ -12,4 +14,13 @@ class Board:
         win.fill(BLACK)
         for row in range(ROWS):
             for col in range(COLS):
-                pygame.draw.rect(win,GREEN , (row*SQUARE_SIZE, col *SQUARE_SIZE, SQUARE_SIZE - PADDING, SQUARE_SIZE - PADDING))  
+                pygame.draw.rect(
+                    win,
+                    GREEN,
+                    (
+                        row * SQUARE_SIZE,
+                        col * SQUARE_SIZE,
+                        SQUARE_SIZE - PADDING,
+                        SQUARE_SIZE - PADDING,
+                    ),
+                )
