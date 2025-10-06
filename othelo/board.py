@@ -24,3 +24,5 @@ class Board:
                         SQUARE_SIZE - PADDING,
                     ),
                 )
+    def create_board(self):
+        pass
